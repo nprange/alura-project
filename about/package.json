@@ -1,0 +1,12 @@
+{
+  "name": "instalura-front",
+  "version": "1.0.0",
+  "main": "about.html",
+  "license": "MIT",
+  "scripts": {
+    "watch-scss": "node-sass --watch styles/scss/main.scss -o styles/css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

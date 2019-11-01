@@ -1,0 +1,153 @@
+.section {
+  &__text {
+    color: $blue-lighten;
+    font-size: $font-sm;
+  }
+
+  /* ==== About Section === */
+  &--about {
+    color: $white;
+    background-image: url("../../images/banner.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 12rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 2.5rem 0.5rem;
+    }
+
+    &__title {
+      font-size: $font-xl;
+      margin-bottom: $margin-xl;
+    }
+
+    &__content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        align-items: center;
+      }
+    }
+
+    &__description {
+      font-size: $font-sm;
+      margin-bottom: $margin-sm;
+      line-height: 1.4rem;
+    }
+
+    &__more-button {
+      border: 1px solid $white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      width: 13.6rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  /* ==== Team Section ==== */
+  &--team {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: $ocean-blue;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+    }
+
+    &__title,
+    &__links li {
+      a {
+        color: $white;
+        margin-left: 2px;
+      }
+
+      .fa-users,
+      .fa-project-diagram {
+        color: $blue-lighten;
+      }
+    }
+
+    &__text,
+    &__links {
+      margin-left: 2rem;
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-left: 0rem;
+      }
+    }
+
+    &__title {
+      color: $white;
+      font-size: $font-xl;
+      align-self: center;
+      margin-bottom: $margin-sm;
+    }
+
+    &__text {
+      margin-bottom: $margin-xs;
+    }
+
+    &__links {
+      margin-top: $margin-xs;
+
+      li {
+        font-size: 1.1rem;
+        margin-top: $margin-sm;
+        cursor: pointer;
+        transition: all 0.8s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__image-container {
+      height: 4rem;
+      width: 20rem;
+      background-image: url("../../images/requite.jpeg");
+      background-size: 50rem;
+      background-position: bottom -135px right 80px;
+      margin-bottom: 2.5rem;
+      border-radius: 3px;
+    }
+
+    &__image {
+      height: 12rem;
+    }
+  }
+
+  /* ==== News Section ==== */
+  &--news {
+    background-color: $ocean-blue;
+    padding: $padding-sm $padding-xs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.8rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}

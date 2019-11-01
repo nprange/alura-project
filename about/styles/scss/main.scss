@@ -1,0 +1,11 @@
+@import "./config/_main.scss";
+@import "./components/_main.scss";
+@import "./layout/_main.scss";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
