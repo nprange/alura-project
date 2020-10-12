@@ -7,6 +7,6 @@
     "watch-scss": "node-sass --watch styles/scss/main.scss -o styles/css"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
